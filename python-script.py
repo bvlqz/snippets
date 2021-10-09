@@ -36,7 +36,7 @@ def concurrentFunc(a, b):
 def main():
     argumentParser = argparse.ArgumentParser(description="Template of python script with argparse and ProcessPoolExecutor")
     argumentParser.add_argument("String", metavar="[STRING]", type=str, help="Required string argument to print")
-    argumentParser.add_argument("-j", "--jobs", metavar="[JOBS]", default=0, type=int, help="jobs (max_workers)")
+    argumentParser.add_argument("-j", "--jobs", metavar="[JOBS]", default=1, type=int, help="jobs (max_workers)")
     argumentParser.add_argument("-v", "--verbose", help="verbose output (set debug level)", action="store_true")
     commandLineArguments = argumentParser.parse_args()
 	

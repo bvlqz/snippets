@@ -63,7 +63,7 @@ class NodeTraversal:
             print(root.val, end=" ")
             self.dfs(root.right)
 
-    # DFS with Stack
+    # DFS with Stack - Preorder Traversal
     def dfsWStack(self, root):
         if not root:
             return
